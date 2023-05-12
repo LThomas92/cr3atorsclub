@@ -31,11 +31,14 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-		
+		<a href="<?php echo get_site_url(); ?>">
+		<img title="Cr3ators Club Logo" class="site-header__logo" src="<?php echo get_template_directory_uri(); ?>/img/cc-logo.png" alt="Cr3ators Club Logo"/>
+		</a>
 		</div><!-- .site-branding -->
 
+
+		<div class="site-header__nav">
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cr3atorsclub' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
@@ -45,4 +48,21 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+			<ul class="site-header__meta-info">
+				<li class="site-header__login">
+				<a href="">Login</a>
+				</li>
+				<li class="site-header__cart">
+				<a href="">
+				<?php echo file_get_contents( get_stylesheet_directory_uri() . '/img/cart.svg' ); ?>
+				<span class="cart_items_num"><?php echo sprintf ( _n( '%d ', '%d ', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() );?></span>
+				</a>
+				</li>
+				<li class="site-header__search">
+				<?php echo file_get_contents( get_stylesheet_directory_uri() . '/img/search.svg' ); ?>
+				</li>
+			</ul>
+		</div>
+
 	</header><!-- #masthead -->

@@ -88,6 +88,8 @@ let blockTriggerHeight = $(window).height() * 0.33;
 
 $(document).ready(function () {
 
+  console.log('works');
+
   if (jQuery(".gutenberg-styles > *").length && !(window.location.hash != "" && jQuery(window.location.hash).length)) {
     gutenbergScrollAnims = true;
     jQuery(".gutenberg-styles > *").each(function () {

@@ -2,6 +2,9 @@
 @import "globals/variables";
 @import "globals/mixins";
 
+@import "header";
+@import "footer";
+
 
 body {
     background-color: $white;
@@ -20,11 +23,11 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: $bebas;
+    font-family: $inter;
   }
   
   li, a, p {
-    font-family: $inter;
+    font-family: $bebas;
   }
   
   //Animations
@@ -64,4 +67,8 @@ body {
   
    [aria-current="page"] {
       color: $black !important;
+  }
+
+  .content {
+    min-height: calc(100vh - 375px);
   }
