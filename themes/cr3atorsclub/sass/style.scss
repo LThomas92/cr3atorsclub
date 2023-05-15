@@ -5,10 +5,16 @@
 @import "header";
 @import "footer";
 
+//Pages
+@import "pages/home";
+@import "pages/about";
+
 
 body {
     background-color: $white;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
   
   * {
@@ -28,6 +34,14 @@ body {
   
   li, a, p {
     font-family: $bebas;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  figure {
+    margin: 0;
   }
   
   //Animations
@@ -70,5 +84,9 @@ body {
   }
 
   .content {
-    min-height: calc(100vh - 375px);
+    flex: 1;
+  }
+
+  .open {
+    display: block;
   }

@@ -88,7 +88,22 @@ let blockTriggerHeight = $(window).height() * 0.33;
 
 $(document).ready(function () {
 
-  console.log('works');
+  $('.modal-trigger').click(function () {
+    var modal_id = $(this).data('target');
+    var video_url = $(this).data('src');
+    $('#' + modal_id + ' iframe').attr('src', video_url);
+    $('#' + modal_id).addClass('open');
+  });
+
+  $('.modal-close').click(function (e) {
+    $(this).closest('.c-featured-videos__modal').removeClass('open');
+  });
+
+  $('.c-featured-videos__modal').click(function (e) {
+    if ($(e.target).hasClass('c-featured-videos__modal')) {
+      $(this).removeClass('open');
+    }
+  });
 
   if (jQuery(".gutenberg-styles > *").length && !(window.location.hash != "" && jQuery(window.location.hash).length)) {
     gutenbergScrollAnims = true;
