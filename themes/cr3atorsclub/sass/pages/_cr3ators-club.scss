@@ -1,0 +1,41 @@
+.c-featured-cr3ators {
+    &__title {
+        &::before {
+            content: '';
+            background-image: url('../img/featured-cr3ators.svg');
+            background-repeat: no-repeat;
+            width: 30%;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        margin-bottom: 3.5rem;
+    }
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__thumbnail {
+        box-shadow: $box-shadow-light-black--2;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    &__list-item {
+        flex-basis: calc((100% / 2) - 2rem);
+        margin-bottom: 5rem;
+        a {
+            color: $black;
+        }
+    }
+    &__list-item-title {
+        font-family: $bebas;
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+    }
+}

@@ -8,6 +8,11 @@
 //Pages
 @import "pages/home";
 @import "pages/about";
+@import "pages//cr3ators-club";
+@import "pages/single-cr3ators";
+
+//Login - Register
+@import "pages/login";
 
 
 body {
@@ -32,7 +37,7 @@ body {
     font-family: $inter;
   }
   
-  li, a, p {
+  li, a, p, label, input {
     font-family: $bebas;
   }
 
