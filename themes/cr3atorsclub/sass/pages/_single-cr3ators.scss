@@ -1,0 +1,27 @@
+.c-single-cr3ators {
+    &__title-img {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__featured-img {
+        max-width: 800px;
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+    &__title-section {
+        margin-top: 7.5rem;
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}

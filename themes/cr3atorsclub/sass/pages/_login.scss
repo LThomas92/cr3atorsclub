@@ -1,0 +1,15 @@
+.c-login {
+    display: flex;
+    justify-content: space-between;
+    &__main-content {
+        width: 40%;
+    }
+    &__featured-img {
+        width: 80%;
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+}

@@ -51,7 +51,7 @@
 
 			<ul class="site-header__meta-info">
 				<li class="site-header__login">
-				<a href="">Login</a>
+				<a href="<?php echo site_url() . '/login' ?>">Login</a>
 				</li>
 				<li class="site-header__cart">
 				<a href="">

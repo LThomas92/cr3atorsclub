@@ -175,7 +175,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "25"
+                "value": "7"
             }
         ]
     ],
@@ -188,5 +188,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684019493
+    "modified": 1684161779
 }
