@@ -74,7 +74,7 @@ __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import \"pages/about\";\n                     ^\n      Invalid CSS after '... \"pages/about\";': expected 1 selector or at-rule, was \"<<<<<<< HEAD\"\n      in /Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/sass/style.scss (line 10, column 23)\n    at /Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/node_modules/webpack/lib/NormalModule.js:195:19\n    at /Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.callback (/Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/node_modules/neo-async/async.js:8069:18)\n    at options.error (/Users/lawrence/Sites/localhost/cr3atorsclub/wp-content/themes/cr3atorsclub/node_modules/node-sass/lib/index.js:293:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
