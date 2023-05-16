@@ -87,3 +87,55 @@ function custom_post_type() {
 	}
 
 	add_action( 'init', 'custom_post_type', 0 );
+
+  //Podcast CPT
+
+  function custom_post_type_1() {
+
+    // Set UI labels for Custom Post Type
+      $labels = array(
+        'name'                => _x( 'Podcasts', 'Post Type General Name' ),
+        'singular_name'       => _x( 'Podcast', 'Post Type Singular Name'),
+        'menu_name'           => __( 'Podcasts'),
+        'parent_item_colon'   => __( 'Parent Podcast'),
+        'all_items'           => __( 'All Podcasts' ),
+        'view_item'           => __( 'View Podcast' ),
+        'add_new_item'        => __( 'Add New Podcast' ),
+        'add_new'             => __( 'Add New' ),
+        'edit_item'           => __( 'Edit Podcast' ),
+        'update_item'         => __( 'Update Podcast' ),
+        'search_items'        => __( 'Search Podcasts' ),
+        'not_found'           => __( 'Not Found' ),
+        'not_found_in_trash'  => __( 'Not found in Trash' ),
+      );
+  
+    // Set other options for Custom Post Type
+  
+      $args = array(
+        'label'               => __( 'Podcasts'),
+        'description'         => __( 'Podcasts'),
+        'labels'              => $labels,
+        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+        'taxonomies'          => array( 'category', 'post_tag' ),
+        'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_icon'           => 'dashicons-microphone',
+        'menu_position'       => 5,
+        'can_export'          => true,
+        'has_archive'         => false,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'post',
+        'show_in_rest' => true,
+  
+      );
+  
+      // Registering your Custom Post Type
+      register_post_type( 'podcasts', $args );
+    }
+  
+    add_action( 'init', 'custom_post_type_1', 0 );

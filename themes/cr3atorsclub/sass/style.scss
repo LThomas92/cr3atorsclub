@@ -8,6 +8,7 @@
 //Pages
 @import "pages/home";
 @import "pages/about";
+@import "pages/podcast";
 
 
 body {
@@ -42,6 +43,10 @@ body {
 
   figure {
     margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
   }
   
   //Animations
