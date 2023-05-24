@@ -22,7 +22,15 @@ $( document ).ready(function() {
       $(this).removeClass('open');
     }
   });
+
+  $(".site-header__search").click(function () {
+    $(".overlay-menu").addClass("show-overlay-menu");
+  });
   
+  $('.close-icon').click(function() {
+    $('.overlay-menu').removeClass('show-overlay-menu');
+  });
+
     if ( jQuery(".gutenberg-styles > *").length &&
     !(window.location.hash != "" && jQuery(window.location.hash).length)
   ) {

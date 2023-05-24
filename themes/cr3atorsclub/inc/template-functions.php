@@ -43,7 +43,7 @@ function custom_post_type() {
 	// Set UI labels for Custom Post Type
 		$labels = array(
 			'name'                => _x( 'Cr3ators', 'Post Type General Name' ),
-			'singular_name'       => _x( 'cr3ators', 'Post Type Singular Name'),
+			'singular_name'       => _x( 'cr3ator', 'Post Type Singular Name'),
 			'menu_name'           => __( 'Cr3ators'),
 			'parent_item_colon'   => __( 'Parent Cr3ator'),
 			'all_items'           => __( 'All Cr3ators' ),
