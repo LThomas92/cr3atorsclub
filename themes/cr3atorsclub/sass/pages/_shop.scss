@@ -1,0 +1,10 @@
+.c-shop-page {
+    &__header {
+        width: 100%;
+        img {
+            width: 100% !important;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}

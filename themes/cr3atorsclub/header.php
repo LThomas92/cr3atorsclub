@@ -54,7 +54,7 @@
 				<a href="<?php echo site_url() . '/login' ?>">Login</a>
 				</li>
 				<li class="site-header__cart">
-				<a href="<?php echo site_url() . '/cart'; ?> ">
+				<a href="<?php echo site_url() . '/cart' ?> ">
 				<?php echo file_get_contents( get_stylesheet_directory_uri() . '/img/cart.svg' ); ?>
 				<span class="cart_items_num"><?php echo sprintf ( _n( '%d ', '%d ', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() );?></span>
 				</a>
@@ -66,3 +66,17 @@
 		</div>
 
 	</header><!-- #masthead -->
+
+	<div class="overlay-menu">
+<img class="close-icon" src="<?php echo get_template_directory_uri(); ?>/img/close.svg" alt="Close Icon"/>
+	<div class="container-margins">
+<div class="header-search-form">
+    <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+  <label>
+      <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search for something...', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+  </label>
+  <button type="submit" name="submit" value="submit"></button>
+</form>
+    </div> <!-- header search form -->
+    </div> <!-- container margins -->
+</div> <!-- overlay menu -->
