@@ -236,6 +236,112 @@
   font-size: 20px;
   cursor: pointer; }
 
+.c-about-page__title {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2.8px; }
+  .c-about-page__title span {
+    background-color: #f9f20b;
+    padding: 0.4rem; }
+
+.c-about-page__our-story {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem; }
+
+.c-about-page__our-story-content {
+  padding-top: 2.5rem; }
+  .c-about-page__our-story-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem; }
+
+.c-about-page__our-story-content, .c-about-page__our-story-images {
+  flex-basis: calc((100% / 2) - 1rem); }
+
+.c-about-page__our-story-images-list {
+  display: flex;
+  flex-direction: column; }
+
+.c-about-page__our-story-images-list-item figure {
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden; }
+  .c-about-page__our-story-images-list-item figure::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.5%; }
+  .c-about-page__our-story-images-list-item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms cubic-bezier(0.64, 0.04, 0.35, 1);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 0px 34px 1px rgba(0, 0, 0, 0.75); }
+
+.c-about-page__meet-the-team-title {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2.8px;
+  color: #c6c4c4;
+  margin-bottom: 2.5rem; }
+  .c-about-page__meet-the-team-title span {
+    background-color: #000;
+    padding: 0.4rem; }
+
+.c-about-page__team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.c-about-page__team-member {
+  flex-basis: calc((100% / 3 ) - 1rem);
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
+  .c-about-page__team-member figure {
+    position: relative;
+    margin-bottom: 0.5rem;
+    overflow: hidden; }
+    .c-about-page__team-member figure::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 66.5%; }
+    .c-about-page__team-member figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 300ms cubic-bezier(0.64, 0.04, 0.35, 1);
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      box-shadow: 0px 0px 34px 1px rgba(0, 0, 0, 0.75); }
+
+.c-about-page__team-member-name {
+  text-transform: uppercase;
+  letter-spacing: 0.8px; }
+
+.c-about-page__team-member-title {
+  color: #c6c4c4; }
+
 .c-podcast-page__header {
   margin-bottom: 10rem; }
   .c-podcast-page__header img {
@@ -402,15 +508,53 @@
 
 .c-login {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  box-shadow: 0px 0px 34px 1px rgba(0, 0, 0, 0.75);
+  padding: 4rem 0;
+  margin: 3.5rem 0;
+  position: relative; }
+  .c-login__logo {
+    height: 4rem;
+    object-fit: cover;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem; }
   .c-login__main-content {
-    width: 40%; }
+    flex-basis: calc((100% / 2) - 2rem);
+    padding-left: 1.5rem;
+    margin-top: 3.5rem; }
   .c-login__featured-img {
-    width: 80%; }
+    flex-basis: calc((100% / 2) - 2rem);
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden; }
+    .c-login__featured-img::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%; }
     .c-login__featured-img img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 300ms cubic-bezier(0.64, 0.04, 0.35, 1);
       display: block;
-      object-fit: cover; }
+      position: absolute;
+      left: 0;
+      top: 0; }
+
+.tml-field {
+  padding: 1rem 1.2rem; }
+
+.tml-button {
+  background-color: #000;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer; }
 
 body {
   background-color: #fff;

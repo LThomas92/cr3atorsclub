@@ -54,7 +54,7 @@
 				<a href="<?php echo site_url() . '/login' ?>">Login</a>
 				</li>
 				<li class="site-header__cart">
-				<a href="">
+				<a href="<?php echo site_url() . '/cart'; ?> ">
 				<?php echo file_get_contents( get_stylesheet_directory_uri() . '/img/cart.svg' ); ?>
 				<span class="cart_items_num"><?php echo sprintf ( _n( '%d ', '%d ', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() );?></span>
 				</a>

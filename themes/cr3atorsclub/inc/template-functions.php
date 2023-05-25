@@ -95,7 +95,7 @@ function custom_post_type() {
     // Set UI labels for Custom Post Type
       $labels = array(
         'name'                => _x( 'Podcasts', 'Post Type General Name' ),
-        'singular_name'       => _x( 'Podcast', 'Post Type Singular Name'),
+        'singular_name'       => _x( 'podcasts', 'Post Type Singular Name'),
         'menu_name'           => __( 'Podcasts'),
         'parent_item_colon'   => __( 'Parent Podcast'),
         'all_items'           => __( 'All Podcasts' ),

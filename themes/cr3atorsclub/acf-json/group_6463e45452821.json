@@ -3,6 +3,27 @@
     "title": "Single: Podcast",
     "fields": [
         {
+            "key": "field_646a1fcea236a",
+            "label": "Podcast Player",
+            "name": "podcast_player",
+            "aria-label": "",
+            "type": "audio_video_player",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "general_type": "audio",
+            "mime_types": "",
+            "return_format": "html",
+            "library": "all",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
             "key": "field_6463e45419242",
             "label": "Podcast Code",
             "name": "podcast_code",
@@ -78,5 +99,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684270906
+    "modified": 1684676597
 }
