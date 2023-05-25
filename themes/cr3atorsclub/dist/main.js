@@ -88,6 +88,8 @@ let blockTriggerHeight = $(window).height() * 0.33;
 
 $(document).ready(function () {
 
+  $('.c-podcast__audio audio').addClass('audio-player');
+
   $('.modal-trigger').click(function () {
     var modal_id = $(this).data('target');
     var video_url = $(this).data('src');

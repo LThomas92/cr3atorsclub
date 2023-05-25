@@ -5,6 +5,8 @@ let gutenbergScrollAnims = false;
 let blockTriggerHeight = $(window).height() * 0.33;
 
 $( document ).ready(function() {
+
+  $('.c-podcast__audio audio').addClass('audio-player');
   
   $('.modal-trigger').click(function() {
     var modal_id = $(this).data('target');
@@ -30,6 +32,7 @@ $( document ).ready(function() {
   $('.close-icon').click(function() {
     $('.overlay-menu').removeClass('show-overlay-menu');
   });
+
 
     if ( jQuery(".gutenberg-styles > *").length &&
     !(window.location.hash != "" && jQuery(window.location.hash).length)

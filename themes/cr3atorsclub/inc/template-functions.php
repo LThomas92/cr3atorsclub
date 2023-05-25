@@ -83,7 +83,7 @@ function custom_post_type() {
 		);
 
 		// Registering your Custom Post Type
-		register_post_type( 'cr3ators', $args );
+		register_post_type('cr3ators', $args );
 	}
 
 	add_action( 'init', 'custom_post_type', 0 );
@@ -135,7 +135,7 @@ function custom_post_type() {
       );
   
       // Registering your Custom Post Type
-      register_post_type( 'podcasts', $args );
+      register_post_type('podcasts', $args );
     }
   
     add_action( 'init', 'custom_post_type_1', 0 );
