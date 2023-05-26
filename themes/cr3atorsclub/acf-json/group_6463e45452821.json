@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_646a1fcea236a",
-            "label": "Podcast Player",
-            "name": "podcast_player",
+            "label": "Podcast Audio",
+            "name": "podcast_audio",
             "aria-label": "",
-            "type": "audio_video_player",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,12 +16,11 @@
                 "class": "",
                 "id": ""
             },
-            "general_type": "audio",
-            "mime_types": "",
-            "return_format": "html",
+            "return_format": "url",
             "library": "all",
             "min_size": "",
-            "max_size": ""
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_6463e45419242",
@@ -104,6 +103,46 @@
             "max_size": "",
             "mime_types": "",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_6470bb02bf1a3",
+            "label": "Podcast About",
+            "name": "podcast_about",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6470bb14bf1a4",
+            "label": "Podcast Transcript",
+            "name": "podcast_transcript",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -124,5 +163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1685022950
+    "modified": 1685113808
 }

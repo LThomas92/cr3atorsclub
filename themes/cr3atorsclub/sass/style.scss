@@ -41,7 +41,7 @@ body {
     font-family: $inter;
   }
   
-  li, a, p, label, input {
+  li, a, p, label, input, span {
     font-family: $bebas;
   }
 
@@ -93,7 +93,7 @@ body {
    }
   
    [aria-current="page"] {
-      color: $black !important;
+      color: $yellow !important;
   }
 
   .content {

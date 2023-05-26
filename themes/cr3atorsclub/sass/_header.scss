@@ -21,6 +21,10 @@
         color: $black;
         border-right: 2.5px solid $black;
         margin-right: 1rem;
+        transition: all 300ms ease-in;
+        &:hover {
+            color: $yellow;
+        }
     }
     &__cart {
         position: relative;
@@ -55,12 +59,15 @@
             color: $black;
             padding-right: 2.5rem;
             font-size: 1.2rem;
+            transition: all 300ms ease-in;
+            &:hover {
+                color: $yellow;
+            }
         }
     }
 }
 
 // Search Form
-
 .overlay-menu {
     width: 100%;
     height: 100%;
