@@ -12,9 +12,11 @@
                     $permalink = get_permalink( $featured_product->ID );
                     $title = get_the_title( $featured_product->ID );
                     $image = get_the_post_thumbnail_url($featured_product->ID);
+                    $link = get_the_permalink($featured_product->ID);
                     ?>
                     <?php if($i == 0) {?>
                     <li class="c-page-shop__big-featured-product" key="<?php echo $i;?>">
+                        <a href="<?php echo $link; ?>">
                         <figure>
                             <img src="<?php echo $image; ?>" alt="">
                         </figure>
@@ -26,6 +28,7 @@
                             <img src="<?php echo $image; ?>" alt="">
                         </figure>
                         <h4><?php echo $title; ?></h4>
+                        </a>
                     </li>
                     <?php } ?>
                     <?php $i++; ?>
